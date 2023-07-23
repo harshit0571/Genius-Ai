@@ -1,10 +1,17 @@
 import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 
-export default function DashBoardPage() {
+const DashBoardPage = () => {
   return (
     <div>
-      <Button>dashboard</Button>
+      <p>Dashboard</p>
     </div>
   );
-}
+};
+
+DashBoardPage.getInitialProps = async (ctx: any) => {
+  return {};
+};
+
+export default DashBoardPage;
